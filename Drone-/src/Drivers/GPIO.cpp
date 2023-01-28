@@ -8,8 +8,7 @@
  *
  */
 
-#include "E:\Projetos\Drone-\Drone-\src\Drivers\GPIO.h"
-
+#include "GPIO.h"
 
 void vPinOn(char pin)
 {

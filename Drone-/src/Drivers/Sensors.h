@@ -17,4 +17,8 @@
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
 
+bool bSensorInit(void);
+float fGetPitch();
+float fGetRoll();
+
 #endif
