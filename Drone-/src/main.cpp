@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#include "E:\Projetos\Drone-\Drone-\src\Cfg\Defines.h"
+#include "E:\Projetos\Drone-\Drone-\src\Drivers\GPIO.h"
 
-void setup() {
-  // put your setup code here, to run once:
+void setup()
+{
+  vGpioInit();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+  vPinOn(LedPin);
+  delay(250);
+  vPinOff(LedPin);
+  delay(250);
 }
