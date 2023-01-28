@@ -1,3 +1,13 @@
+/*!
+ *  @file GPIO.cpp
+ *
+ * 	GPIO Functions encapsulation drivers
+ *
+ * 	Author: Giovanni Ferreira Raschietti
+ *  Date: 28/01/2023
+ *
+ */
+
 #include "E:\Projetos\Drone-\Drone-\src\Drivers\GPIO.h"
 
 
@@ -14,7 +24,7 @@ void vPinOff(char pin)
 void vGpioInit()
 {
     pinMode(LedPin, OUTPUT);
-    for(int i=0; i<4; i++) ledcSetup(i, freq, resolution);
+    for(int i=0; i<4; i++) ledcSetup(i, fq, re);
     ledcAttachPin(m0, 0);
     ledcAttachPin(m1, 1);
     ledcAttachPin(m2, 2);
