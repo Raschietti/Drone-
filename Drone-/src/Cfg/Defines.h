@@ -1,8 +1,8 @@
 #define LedPin      13
 
 // PWM Settings
-#define freq        5000
-#define resolution  8
+#define fq          5000
+#define re          8
 
 // Motor pinout
 #define m0          32
