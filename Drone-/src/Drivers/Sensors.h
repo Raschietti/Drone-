@@ -6,6 +6,7 @@
  * 	Author: Giovanni Ferreira Raschietti
  *  Date: 28/01/2023
  *
+ *  I2C Standard Pinout -> SDA = 21; SCL = 22
  */
 
 #ifndef _SENSORS_H
@@ -20,5 +21,6 @@
 bool bSensorInit(void);
 float fGetPitch();
 float fGetRoll();
+void vCalculateAngle();
 
 #endif

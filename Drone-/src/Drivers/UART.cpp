@@ -20,7 +20,7 @@ void vInitUART(unsigned long br)
 
 void vUartWrite(const char *s)
 {
-    Serial.println(s);
+    Serial.print(s);
 }
 
 
