@@ -32,9 +32,9 @@ void vGpioInit()
 
 void vPwmSet(char mot, int dty)
 {
-    if(mot <= 3 && mot > 0)
+    if(mot <= 4 && mot > 0)
     {
-        ledcWrite(mot+1, dty);
+        ledcWrite(mot-1, dty);
     }  
     else
     {
@@ -44,9 +44,9 @@ void vPwmSet(char mot, int dty)
 
 void vPwmOff(char mot)
 {
-    if(mot <= 3 && mot > 0)
+    if(mot <= 4 && mot > 0)
     {
-        ledcWrite(mot, 0);
+        ledcWrite(mot-1, 0);
     }
     else
     {

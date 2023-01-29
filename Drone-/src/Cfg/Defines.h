@@ -9,3 +9,6 @@
 #define m1          33
 #define m2          19
 #define m3          23
+
+// UART Settings
+#define MAX_BUFFER_LENGHT 100
