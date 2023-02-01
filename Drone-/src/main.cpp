@@ -9,7 +9,7 @@ struct sAngle
 {
   float pitch;
   float roll;
-  char b[100];
+  char b[10];
 };
 
 char    received[MAX_BUFFER_LENGHT] = {'\0'}; 
@@ -30,7 +30,7 @@ void loop()
 {
 
   vCalculateAngle();
-  delay(1);
+  delay(100);
   angle.pitch = fGetPitch();
   angle.roll  = fGetRoll();
 
@@ -42,15 +42,8 @@ void loop()
   vUartWrite(", Roll: ");
   vUartWrite(angle.b);
   vUartWrite("\n");
-  //vUartRead(received);
+ 
+  vPwmSet(4, random(255));
+  delay(500);
 
-  for(int i=0; i<255; i++)
-  {
-    vPwmSet(4, i);
-    delay(1);
-  }
-
-  
-
-  
 }
